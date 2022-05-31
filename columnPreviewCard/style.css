@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.card .sedans {
+  width: 200px;
+  height: 250px;
+  padding: 30px;
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.sedans h1,
+.suvs h1,
+.luxury h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+.sedans p,
+.suvs p,
+.luxury p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+.card .suvs {
+  width: 200px;
+  height: 250px;
+  padding: 30px;
+  background: hsl(184, 100%, 22%);
+}
+.card .luxury {
+  width: 200px;
+  height: 250px;
+  padding: 30px;
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+.button {
+  text-decoration: none;
+  background-color: white;
+  padding: 13px 23px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-left: 20px;
+}
+.sedans a {
+  color: hsl(31, 77%, 52%);
+}
+.suvs a {
+  color: hsl(184, 100%, 22%);
+}
+.luxury a {
+  color: hsl(179, 100%, 13%);
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+    margin: 0 25px;
+  }
+  .card .sedans {
+    border-radius: 10px 10px 0 0;
+    width: 250px;
+    height: 300px;
+  }
+  .card .suvs {
+    width: 250px;
+    height: 300px;
+  }
+  .card .luxury {
+    border-radius: 0 0 10px 10px;
+    width: 250px;
+    height: 300px;
+  }
+  .card {
+    display: block;
+  }
+  .sedans h1,
+  .suvs h1,
+  .luxury h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .sedans p,
+  .suvs p,
+  .luxury p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+  .button {
+    text-decoration: none;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 55px;
+  }
+}
